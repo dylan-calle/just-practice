@@ -22,6 +22,16 @@ Aprendí cómo hacer que mi archivo commiteado deje de estar trackeado y tambié
 
 # Clase 3
 
+Clase de Ramas, Merge y Conflictos
+
 ## Merging
 
-En el desarrollo de software hay muchas ramas para trabajar, entre ellos están main, develop, test depende mucho del gitflow. Al hacer merge git crea un nuevo commit llamado fast-forwarding
+En el desarrollo de software hay muchas ramas para trabajar, entre ellos están main, develop, test depende mucho del gitflow. Al hacer merge git crea un nuevo commit llamado fast-forwarding pero este solo es cuando el main no cambia, entonces el puntero solo va al main y ya. La cosa cambia cuando tanto el main como la nueva rama han cambiado ahí se hace un commit de merge donde pueden haber conflictos.
+
+Comandos que aprendí:
+git merge <new_rama>: Tengo que estar en la rama que quiero unificar, en este caso main o si existiera develop
+git branch -d <rama_name>: Para borrar la rama en caso de que esté merged, hacer como un --force sería git branch -D <rama_name>
+
+git log --one-line --graph
+
+![Cómo se ve](./images/merging.png)
