@@ -35,3 +35,14 @@ git branch -d <rama_name>: Para borrar la rama en caso de que esté merged, hace
 git log --one-line --graph
 
 ![Cómo se ve](./images/merging.png)
+
+# Clase 4
+
+git push -f o git push --force: Hace que el push al repositorio remoto sobreescriba el historial de push, muy peligroso y no recomendable.
+git push -u o git push --set-upstream: Hace que el repositorio local trackee la rama y lo suba a la rama y no al main directamente.
+
+Se puede hacer push al main desde otra rama pero esto sobreescribirá el main también, no es lo mejor trabajando en equipo
+
+Aprendi que en los pull request son importantes los cambios especificos y no así varios cambios en uno, un gif o una imagen podrían explicar bien el cambio.
+
+Al revisar un pull request también es bueno dar feedback o incluso corregir el código.
