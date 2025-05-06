@@ -46,3 +46,25 @@ Se puede hacer push al main desde otra rama pero esto sobreescribirá el main ta
 Aprendi que en los pull request son importantes los cambios especificos y no así varios cambios en uno, un gif o una imagen podrían explicar bien el cambio.
 
 Al revisar un pull request también es bueno dar feedback o incluso corregir el código.
+
+# Clase 5
+
+Aprendí los flujos de Git Flow, GitHub Flow y la Ship, Show, Ask.
+
+## Git Flow
+
+Git Flow es el más clásico tiene ramas para la mayoría de funciones, estás son las principales
+
+1. main: Es la rama de producción, aquí es el código que se ve en el despliegue
+2. develop: Esta es la segunda más importante porque todo se mergea aquí antes del main, y de está parten las demás ramas
+3. feature: Ramas para nuevas funcionalidades
+4. hot-fix: Arreglar bugs de producción, directamente merge a main
+5. realease: Ya apunto de mergearlo al main como cambios de último momento
+
+## GitHub Flow
+
+Es un flujo más rápido que despliega seguido, es ideal para páginas web, es necesario un buen CD/CI para ponerlo en práctica, es para usuarios más avanzados
+
+## Ship, Show, Ask
+
+Es muy bueno pero se necesita de un equipo responsable y un buen sistema de CI/CD ya que los cambios se fusionan directo al main, sin preguntar. Es bueno cuando hay mucha confianza y agilidad
