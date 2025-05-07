@@ -68,3 +68,41 @@ Es un flujo más rápido que despliega seguido, es ideal para páginas web, es n
 ## Ship, Show, Ask
 
 Es muy bueno pero se necesita de un equipo responsable y un buen sistema de CI/CD ya que los cambios se fusionan directo al main, sin preguntar. Es bueno cuando hay mucha confianza y agilidad
+
+# Clase 6
+
+Buenas practicas
+
+## Cómo nombrar commits
+
+Los commits tienes que ser muy descriptivos, y normalmente usan prefijos para que se entienda lo agregado. Estos son algunos consejos
+
+1. Usar verbo infinitivo (add, change, fix, remove)
+2. No usar puntuaciones, máximo la coma
+3. Máximo 50 caracteres
+4. Usar prefijos
+
+¿Cuáles son esos prefijos?
+
+1. feat
+2. fix
+3. perf
+4. build
+5. ci
+6. docs
+7. refactor
+8. style
+9. test
+
+Template:
+<tipo_de_commit>[scope]: <descripción>
+scope: ámbito o campo
+Ejemplos
+feat[backend]: add people API
+style[frontend]: change color from red to blue
+
+## Cómo nombrar ramas\_
+
+Podemos utilizar lo mismo que commit solo con una barra.
+
+feat/add-people-api
