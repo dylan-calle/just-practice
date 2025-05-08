@@ -101,8 +101,26 @@ Ejemplos
 feat[backend]: add people API
 style[frontend]: change color from red to blue
 
-## Cómo nombrar ramas\_
+## Cómo nombrar ramas
 
 Podemos utilizar lo mismo que commit solo con una barra.
 
 feat/add-people-api
+
+# Clase 7
+
+## Comandos de undo
+
+### 1. git reset
+
+Hay dos formas, en sí 3 pero solo vamos a ver 2 que son git reset --hard y git reset --soft lo que hace el hard es que elimina todo los cambios del espacio de trabajo y va al commit que se especifica, el soft hace lo mismo pero no borra los cambios del espacio de trabajo, o sea tendrás los cambios como unmodified.
+
+### 2. git checkout
+
+Cambia el HEAD a un commit, pero no realmente porque es un detached HEAD, es más para ver cómo estaba el repo o un archivo en especifico en ese momento para copiar código y volver al HEAD
+
+### 3. git revert
+
+Hace lo mismo que git reset pero crea un nuevo commit entonces no destruye nada, si queremos volver solo volvemos al cómmit antes del git revert.
+
+Buen aporte de Juan Manuel torres en el cual se hacia un git reset --hard y cómo recuperamos? hacemos un git reflog para ver un log más detallado incluso de los que no están, después volvemos a utilizar un reset --hard al commit anterior y ya recuperamos todo nuestro historial.
