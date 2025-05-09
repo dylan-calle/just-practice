@@ -19,3 +19,9 @@ Aprendí cómo hacer que mi archivo commiteado deje de estar trackeado y tambié
 4. git push
 5. crear .env
    Aprendí que HEAD es dónde está el repositorio actualmente
+
+# Clase 3
+
+## Merging
+
+En el desarrollo de software hay muchas ramas para trabajar, entre ellos están main, develop, test depende mucho del gitflow. Al hacer merge git crea un nuevo commit llamado fast-forwarding
