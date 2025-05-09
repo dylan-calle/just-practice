@@ -124,3 +124,21 @@ Cambia el HEAD a un commit, pero no realmente porque es un detached HEAD, es má
 Hace lo mismo que git reset pero crea un nuevo commit entonces no destruye nada, si queremos volver solo volvemos al cómmit antes del git revert.
 
 Buen aporte de Juan Manuel torres en el cual se hacia un git reset --hard y cómo recuperamos? hacemos un git reflog para ver un log más detallado incluso de los que no están, después volvemos a utilizar un reset --hard al commit anterior y ya recuperamos todo nuestro historial.
+
+# Clase 8
+
+Comandos nuevos:
+git stash: Antes de hacer una burrada mejor haces el stash para tener nuestros cambios a salvo
+git stash pop: recuperamos los cambios en necesidad
+
+git cherry-pick: Solo aplica cambios en commits especificaods
+
+Los mejores alias:
+
+1. log --graph --pretty=format:'%C(yellow)%h%Creset - %s %Cgreen(%ar) %C(bold blue)[%an]%Creset%C(yellow)%d%Creset' --abbrev-commit
+2. cm = commit -m
+3. discard = reset HEAD^ --hard
+
+git config --global alias.lg "log --graph --pretty=format:'%C(yellow)%h%Creset - %s %Cgreen(%ar) %C(bold blue)[%an]%Creset%C(yellow)%d%Creset' --abbrev-commit"
+git config --global alias.cm "commit -m"
+git config --global alias.discard "reset HEAD^ --hard"
